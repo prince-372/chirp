@@ -6,6 +6,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="shortcut icon" href="./assets/image/svg/footerLogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js">
+    <link rel="stylesheet" href="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>chirp</title>
     <script>
@@ -242,8 +244,8 @@
         <div class="lg:w-1/2 w-full  px-3 pt-4 xl:pt-0 ">
           <div
             class="sm:max-w-[676px] max-w-[380px] sm:h-[561px] h-[415px] mx-auto xl:mx-0  rounded-[32px] bg-greengradient relative">
-            <button
-              class="ff-phudu md:text-5xl text-[34px] lg:text-[70px] xl:text-[80px] uppercase sm:leading-[80px] leading-[48px] absolute md:left-[-8%] left-[-3%] top-[5%] font-bold text-white1 rounded-full bg-skyblue xl:p-[39px_55px_46px_59px] p-[18px_30px_24px_29px]">
+            <button 
+              class="ff-phudu md:text-5xl text-[34px] lg:text-[70px] xl:text-[80px] uppercase sm:leading-[80px] leading-[48px] absolute md:left-[-8%] left-[-3%] top-[5%] font-bold text-white1 rounded-full bg-skyblue xl:p-[39px_55px_46px_59px] p-[18px_30px_24px_29px] data-tilt">
               Soar quickly
             </button>
             <button class="ff-phudu md:text-5xl text-[34px] lg:text-[70px] xl:text-[80px] uppercase sm:leading-[80px] leading-[48px] border border-white2 font-bold text-white rounded-full bg-transperantgradient xl:p-[40px_56px_45px_56px] p-[26px_34px_28px_30px] z-[2] backdrop-blur-lg absolute top-[29%] left-[30%]">
@@ -283,7 +285,7 @@
           <p class="ff-poppins font-normal text-[14px] leading-[20px] text-grey ">Make your sales teams superhuman.<span class="block">Chirp. The Sales AI Co-Pilot.</span></p>
          </div>
          <div class=" flex items-center lg:justify-end justify-center pt-5 md:pt-0 order-3 md:order-2">
-          <p class="ff-poppins font-normal text-[14px] leading-[20px] text-grey ">© 2024 Chirp. All rights reserved.</p>
+          <p class="ff-poppins font-normal text-[14px] leading-[20px] text-grey ">© <span id="currentYear"></span>  Chirp. All rights reserved.</p>
          </div>
          <div class=" flex items-center lg:justify-end justify-center gap-4 pt-5 md:pt-0 order-2 md:order-3">
           <a href="https://in.linkedin.com/" target="_blank"><svg class=" duration-300 hover:duration-300 hover:translate-y-0.5" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -308,7 +310,8 @@
       </div>
     </div>
   </body>
-<script>
+  <script src="tilt.jquery.js"></script>
+  <script>
   function handleScrollAnimations() {
     const sections = document.querySelectorAll('.animate-section');
 
@@ -329,5 +332,7 @@
 
 
   window.addEventListener('scroll', handleScrollAnimations);
+  document.getElementById("currentYear").innerText =
+        new Date().getFullYear();
 </script>
 </html>
