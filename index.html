@@ -47,7 +47,7 @@
             <a href="" class=" sm:w-[134px] w-[100px]"><img src="./assets/image/svg/logo.svg" alt="logo" /></a>
             <div>
               <button
-                class=" flex items-center ff-phudu hover:bg-white hover border uppercase  border-transperent hover:border hover:border-darkgreen duration-300 hover:duration-300 gap-2 font-semibold sm:text-[20px] text-[15px] leading-[20px] text-darkgreen bg-lightgreen rounded-[30px] sm:py-[12px] py-[10px] sm:px-[20px] px-[13px]"
+                class=" flex items-center ff-phudu hover:bg-white hover border uppercase  border-transperent hover:border hover:border-darkgreen duration-300 hover:duration-300 gap-2 font-semibold sm:text-[20px] text-[15px] leading-[20px] text-darkgreen bg-lightgreen rounded-[30px] p-[10px_20px_10px_32px] sm:px-[20px] px-[13px]"
               >
                 Coming soon
                 <span>
@@ -94,7 +94,7 @@
               class="ff-poppins text font-normal text-[18px] leading-[24px] hidden md:block text-grey max-w-[268px] pt-10"
             >
               Supercharge your conversion rates and
-              <span class="font-semibold text-lightgreen">save up to 34%</span>
+              <span class="font-semibold text-lightgrey">save up to 34%</span>
               of your sales rep's time, by automating mundane tasks.
             </p>
           </div>
@@ -170,7 +170,7 @@
           class="ff-poppins block md:hidden text font-normal text-[18px] mt-[32px] leading-[24px] text-grey "
         >
           Supercharge your conversion rates and
-          <span class="font-semibold text-lightgreen">save up to 34%</span>
+          <span class="font-semibold text-lightgrey">save up to 34%</span>
           of your sales rep's time, by automating mundane tasks.
         </p>
         <div class="md:hidden mt-[32px]">
@@ -247,7 +247,7 @@
               Soar quickly
             </button>
             <button
-              class="ff-phudu md:text-5xl text-[34px] lg:text-[70px]  xl:text-[80px] uppercase sm:leading-[80px] leading-[48px] border border-white2 font-bold text-white rounded-full bg-transperantgradient xl:p-[40px_56px_45px_56px] p-[26px_34px_28px_30px] z-[10] absolute top-[29%] left-[30%]">
+              class="ff-phudu md:text-5xl text-[34px] lg:text-[70px] xl:text-[80px] uppercase sm:leading-[80px] leading-[48px] border border-white2 font-bold text-white rounded-full bg-transperantgradient xl:p-[40px_56px_45px_56px] p-[26px_34px_28px_30px] z-[2]  absolute top-[29%] left-[30%]">
               with our
             </button>
             <button
@@ -269,7 +269,7 @@
               alt="correct">
             <img class="absolute lg:right-[11%] right-[14%] lg:bottom-[2%] bottom-[8%] sm:w-[66px] w-[37px]" src="./assets/image/svg/circle.svg"
               alt="correct">
-            <img class="absolute right-[0] bottom-[37%] z-n1 sm:w-[100px] w-[82px]"
+            <img class="absolute right-[0] bottom-[37%] sm:w-[100px] w-[82px]"
               src="./assets/image/png/halfCircle.png" alt="halfCircle">
           </div>
         </div>
@@ -326,6 +326,7 @@
   gsap.from(".text", { opacity: 0, y: 100, duration: 1, delay: 0.5, stagger: 0.2, ease: "bounce.out" });
   gsap.from(".bg-lightgreen", { scaleX: 0, scaleY: 0, duration: 1.5, ease: "elastic.out(1, 0.75)", delay: 0.2 });
   gsap.from(".bg-lightgreen", {  duration: 2, delay: 2, ease: "bounce.in" });
+  gsap.from(".bg-skyblue1", {  duration: 3, delay: 3, ease: "bounce.in" });
 
 
   window.addEventListener('scroll', handleScrollAnimations);
