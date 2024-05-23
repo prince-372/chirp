@@ -125,7 +125,7 @@
                 </svg>
               </span>
               <div class=" hidden md:block ps-[43px] lg:pt-[96px] pt-[54px] text">
-              <button class="p-[7px_19px_10px_30px] btn  justify-end duration-300 w-[267px] min-h-[44px] flex items-center overflow-hidden z-30 hover:bg-white hover:border hover:border-darkgreen border border-transperent uppercase bg-yellow rounded-[30px] text-darkgreen gap-3 leading-[20px] relative font-semibold ff-phudu sm:text-[20px] text-[16px] sm:leading-[20px] leading-[10px]">
+              <a href="#subscribe" class="p-[7px_19px_10px_30px] btn  justify-end duration-300 w-[267px] min-h-[44px] flex items-center overflow-hidden z-30 hover:bg-white hover:border hover:border-darkgreen border border-transperent uppercase bg-yellow rounded-[30px] text-darkgreen gap-3 leading-[20px] relative font-semibold ff-phudu sm:text-[20px] text-[18px] sm:leading-[20px] leading-[10px]">
                 <span class="pe-1"
                   ><svg
                     width="24"
@@ -148,13 +148,13 @@
                     />
                   </svg>
                 </span>
-                <span class=" absolute duration-300 w-[85%] btn-one top-[45%] left-[0] translate-y-[-47%] ">
+                <span class=" absolute duration-300 w-[85%] btn-one top-[45%] left-[10%] translate-y-[-47%] ">
                   subscribe for more
                 </span>
-                <span class="absolute duration-300 btn-two w-[85%] top-[145%] left-[0] translate-y-[-47%] ">
+                <span class="absolute duration-300 btn-two w-[85%] top-[145%] left-[10%] translate-y-[-47%] ">
                   subscribe for more
                 </span> 
-              </button>
+              </a>
             </div>
           </div>
           <div class="flex items-center gap-[30px] ">
@@ -182,7 +182,7 @@
           of your sales rep's time, by automating mundane tasks.
         </p>
         <div class="md:hidden mt-[32px]">
-          <button class="p-[7px_19px_10px_30px] ff-phudu overflow-hidden btn hover:bg-white justify-end duration-300 w-[267px] min-h-[44px] flex items-center z-30 hover:border hover:border-darkgreen border text-darkgreen border-transperent uppercase bg-yellow rounded-[30px] gap-3 leading-[20px] relative font-semibold sm:text-[20px] text-[16px] sm:leading-[20px] leading-[10px]">
+          <a href="#subscribe" class="p-[7px_19px_10px_30px] ff-phudu overflow-hidden btn hover:bg-white justify-end duration-300 w-[267px] min-h-[44px] flex items-center z-30 hover:border hover:border-darkgreen border text-darkgreen border-transperent uppercase bg-yellow rounded-[30px] gap-3 leading-[20px] relative font-semibold sm:text-[20px] text-[18px] sm:leading-[20px] leading-[10px]">
             <span class="pe-1"
               ><svg
                 width="24"
@@ -205,19 +205,19 @@
                 />
               </svg>
             </span>
-            <span class=" absolute duration-300 w-[85%] btn-one top-[45%] left-[0] translate-y-[-50%] ">
+            <span class=" absolute duration-300 w-[85%] btn-one top-[45%] left-[10%] translate-y-[-50%] ">
               subscribe for more
             </span>
-            <span class="absolute duration-300 btn-two w-[85%] top-[145%] left-[0] translate-y-[-50%] ">
+            <span class="absolute duration-300 btn-two w-[85%] top-[145%] left-[10%] translate-y-[-50%] ">
               subscribe for more
             </span> 
-          </button>
+          </a>
     </div>
         </div>
       </div>
     </div>
     <!-- input -->
-    <div class="container max-w-[1402px] px-3 mx-auto pb-10">
+    <div id="subscribe" class="container max-w-[1402px] px-3 mx-auto pb-10">
       <div class="flex flex-row flex-wrap -mx-3 justify-content-center ">
         <div class="lg:w-1/2 w-full px-3">
           <div
@@ -407,18 +407,4 @@
       });
   });
 </script>
-<!-- smooth animation -->
-<script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
-<script>
-  const lenis = new Lenis();
-  lenis.on("scroll", (e) => {
-    console.log(e);
-  });
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-</script>
-
 </html>
