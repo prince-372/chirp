@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/image/svg/footerLogo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js">
-    <link rel="stylesheet" href="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script src="tilt.jquery.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <title>Chirp</title>
     <script>
       tailwind.config = {
@@ -127,7 +125,7 @@
                 </svg>
               </span>
               <div class=" hidden md:block ps-[43px] pt-24 text">
-              <button class="p-[7px_19px_10px_30px] ff-phudu btn hover:bg-white justify-end duration-300 w-[267px] min-h-[44px] flex items-center overflow-hidden z-30 hover:bg-white hover:border hover:border-darkgreen border text-darkgreen hover:border-darkgreen border-transperent uppercase bg-yellow rounded-[30px] text-darkgreen gap-3 leading-[20px] relative font-semibold ff-phudu sm:text-[20px] text-[16px] sm:leading-[20px] leading-[10px]">
+              <button class="p-[7px_19px_10px_30px] btn  justify-end duration-300 w-[267px] min-h-[44px] flex items-center overflow-hidden z-30 hover:bg-white hover:border hover:border-darkgreen border border-transperent uppercase bg-yellow rounded-[30px] text-darkgreen gap-3 leading-[20px] relative font-semibold ff-phudu sm:text-[20px] text-[16px] sm:leading-[20px] leading-[10px]">
                 <span class="pe-1"
                   ><svg
                     width="24"
@@ -184,7 +182,7 @@
           of your sales rep's time, by automating mundane tasks.
         </p>
         <div class="md:hidden mt-[32px]">
-          <button class="p-[7px_19px_10px_30px] ff-phudu overflow-hidden btn hover:bg-white justify-end duration-300 w-[267px] min-h-[44px] flex items-center z-30 hover:bg-white hover:border hover:border-darkgreen border text-darkgreen hover:border-darkgreen border-transperent uppercase bg-yellow rounded-[30px] text-darkgreen gap-3 leading-[20px] relative font-semibold ff-phudu sm:text-[20px] text-[16px] sm:leading-[20px] leading-[10px]">
+          <button class="p-[7px_19px_10px_30px] ff-phudu overflow-hidden btn hover:bg-white justify-end duration-300 w-[267px] min-h-[44px] flex items-center z-30 hover:border hover:border-darkgreen border text-darkgreen border-transperent uppercase bg-yellow rounded-[30px] gap-3 leading-[20px] relative font-semibold sm:text-[20px] text-[16px] sm:leading-[20px] leading-[10px]">
             <span class="pe-1"
               ><svg
                 width="24"
@@ -256,7 +254,6 @@
                     <span class="absolute duration-300 btn-two w-[85%] top-[145%] left-[7%] translate-y-[-50%] ">
                       Submit
                     </span> 
-                    <span class="absolute inset-0 flex items-center justify-center transition-transform transform translate-y-full bg-white rounded-md hover:scale-[300] duration-700 z-[-20]"></span>
                   </button>
                 </div>
               </form>
@@ -342,7 +339,6 @@
     </div>
   </body>
   <!-- tiltjs -->
-  <script src="tilt.jquery.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
       const tiltElements = ["#tilt-button", "#tilt-button2", "#tilt-button3"];
@@ -371,12 +367,11 @@
     });
   }
 
-  gsap.from(".text", { opacity: 0, y: 100, duration: 1, delay: 0.5, stagger: 0.2, ease: "bounce.out" });
-  gsap.from(".text2", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, ease: "bounce.out" });
-  gsap.from(".bigbtn", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, ease: "bounce.out" });
-  gsap.from(".bigbtn2", { opacity: 0, x: 100, duration: 1, delay: 3, stagger: 0.2, ease: "bounce.out" });
-  gsap.from(".bigbtn3", { opacity: 0, y: 100, duration: 1, delay: 3.5, stagger: 0.2, ease: "bounce.out" });
-  gsap.from(".bg-lightgreen", { scaleX: 0, scaleY: 0, duration: 1.5, ease: "elastic.out(1, 0.75)", delay: 0.2 });
+  gsap.from(".text", { opacity: 0, y: 100, duration: .5, delay: 0.5, stagger: 0.2, });
+  gsap.from(".text2", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2, });
+  gsap.from(".bigbtn", { opacity: 0, y: -100, duration: 1, delay: 2.5, stagger: 0.2,  });
+  gsap.from(".bigbtn2", { opacity: 0, x: 100, duration: 1, delay: 3, stagger: 0.2,  });
+  gsap.from(".bigbtn3", { opacity: 0, y: 100, duration: 1, delay: 3.5, stagger: 0.2, });
   gsap.from(".icon", { scaleX: 0, scaleY: 0, duration: 1.5, ease: "elastic.out(1, 0.75)", delay: 3.2 });
   gsap.from(".bg-lightgreen", {  duration: 2, delay: 2, ease: "bounce.in" });
   gsap.from(".bg-skyblue1", {  duration: 3, delay: 3, ease: "bounce.in" });
