@@ -341,6 +341,7 @@
       </div>
     </div>
   </body>
+  <!-- tiltjs -->
   <script src="tilt.jquery.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
@@ -355,6 +356,7 @@
       });
     });
   </script>
+  <!-- gsap animation -->
   <script>
   function handleScrollAnimations() {
     const sections = document.querySelectorAll('.animate-section');
@@ -384,7 +386,7 @@
   document.getElementById("currentYear").innerText =
         new Date().getFullYear();
 </script>
-
+<!-- emailjs -->
 <script>
   emailjs.init("YOUR_USER_ID"); 
 
@@ -410,29 +412,7 @@
       });
   });
 </script>
-
-<script>
-  document.getElementById('subscribeForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-
-    if (!name) {
-      alert('Please enter your name.');
-      return;
-    }
-
-    if (!email) {
-      alert('Please enter your email.');
-      return;
-    }
-
-   
-
-    alert('Form submitted successfully!');
-  });
-</script>
+<!-- smooth animation -->
 <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
 <script>
   const lenis = new Lenis();
